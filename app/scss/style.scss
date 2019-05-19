@@ -184,7 +184,8 @@ ul{
 /*---Services start---*/
 .services{
     background-color: #f6f6f6;
-    padding-top: 120px;
+    padding-top: 115px;
+    padding-bottom: 50px;
     .services__title{
         margin-bottom: 60px;
     }
@@ -200,3 +201,16 @@ ul{
     }
 }
 /*---Services end---*/
+
+/*---Skills start---*/
+.skills{
+    padding-top: 115px;
+    margin-bottom: 120px;
+    .skills__title{
+        margin-bottom: 55px;
+    }
+    .skills__img{
+        text-align: center;
+    }
+}
+/*---Skills end---*/
