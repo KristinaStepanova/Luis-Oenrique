@@ -23,6 +23,15 @@ a{
 ul{
     margin: 0;
 }
+.title{
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 49px;
+    letter-spacing: 1.2px;
+    opacity: .8;
+    text-align: center;
+    text-transform: uppercase;
+}
 /*---Common end---*/
 
 /*---Header start---*/
@@ -112,3 +121,36 @@ ul{
     }
 }
 /*---Top end---*/
+
+/*---About start---*/
+.about{
+    padding-top: 110px;
+    padding-bottom: 125px;
+    .about__inner{
+        min-height: 445px;
+        display: flex;
+        justify-content: space-between;
+        .about__info{
+            max-width: 480px;
+            .about__title{
+                text-align: left;
+                max-width: 320px;
+            }
+            .about__text{
+                font-size: 16px;
+                line-height: 26px;
+                margin-top: 5px;
+            }
+            .about__btn{
+                font-size: 16px;
+                letter-spacing: 0.6px;
+                font-weight: 500;
+                padding: 15px 45px;
+                color: $accent;
+                border: 1px solid $accent;
+                margin-top: 35px;
+            }
+        }
+    }
+}
+/*---About end---*/
