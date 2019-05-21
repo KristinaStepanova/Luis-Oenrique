@@ -24,9 +24,15 @@ section{
     margin-right: -15px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 .col-4{
     width: 33.3333%;
+    padding: 0 15px;
+}
+.col-3{
+    width: 25%;
     padding: 0 15px;
 }
 a{
@@ -107,7 +113,7 @@ ul{
         position: relative;
         height: 100vh;
         padding-top: 100px;
-        .top__contant{
+        .top__content{
             position: absolute;
             left: 0;
             top: 50%;
@@ -244,15 +250,12 @@ ul{
     .title{
         margin-bottom: 40px;
     }
-    .portfolio__items{
-        justify-content: center;
-         .portfolio__item{
-            width: 400px;
-            padding: 0px 15px;
-            &:hover{
-                box-shadow: 0px 0px 36.75px 12.25px rgba(0, 0, 0, 0.15);
-                transition: all .3s;
-            }
+    .portfolio__item{
+        width: 400px;
+        padding: 0px 15px;
+        &:hover{
+        box-shadow: 0px 0px 36.75px 12.25px rgba(0, 0, 0, 0.15);
+        transition: all .3s;
         }
     }
     .portfolio__btn{
@@ -274,14 +277,39 @@ ul{
 
 /*---Testimonials end---*/
 .testim{
+    padding-top: 50px;
+    padding-bottom: 120px;
     .title{
         margin-bottom: 55px;
     }
-    .testim__content{
+    .testim__slider{
+        padding: 80px 70px 35px 120px;
+        border: 1px solid $second;
         max-width: 955px;
         margin: 0 auto;
-        border: 1px solid $second;
-        padding: 80px 70px 105px 120px;
+        margin-bottom: 120px;
+        .slick-dots{
+            text-align: center;
+            li{
+               display: inline-block; 
+                button{
+                height: 13px;
+                width: 13px;
+                border: 1px solid $second;
+                outline: none;
+                background-color: transparent;
+                font-size: 0;
+                padding: 0;
+                margin-right: 5px;
+                }
+                &.slick-active button{
+                    background-color: $second;
+                }
+            }
+        }
+    }
+    .testim__content{
+        margin-bottom: 40px;
         &::after{
             content: "";
             clear: both;
@@ -297,7 +325,6 @@ ul{
         float: right;
         text-transform: uppercase;
         color: $second;
-        padding-left: 30px;
         .testim__name{
             font-weight: 500;
             font-size: 30px;
@@ -306,6 +333,8 @@ ul{
         }
         .testim__position{
             font-size: 12px;
+            margin-bottom: 10px;
+            font-style: italic;
         }
         .testim__text{
             font-size: 16px;
@@ -313,5 +342,33 @@ ul{
             opacity: .6;
         }
     }
+    .benefit__icons{
+        background-color: #f6f6f6;
+        min-height: 300px;
+        padding-top: 50px;
+        .benefit__item{
+            color: $second;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 32px;
+            .benefit__img{
+                margin-bottom: 10px;
+            }
+            .benefit__count{
+                font-weight: 500;
+                font-size: 30px;
+                opacity: .9;
+                margin-bottom: 5px;
+            }
+            .benefit__title{
+                font-size: 22px;
+                opacity: .9;
+            }
+        }
+    }
 }
+
+
+
+
 /*---Testimonials start---*/
