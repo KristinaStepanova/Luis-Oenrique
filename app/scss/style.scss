@@ -27,6 +27,10 @@ section{
     justify-content: center;
     align-items: center;
 }
+.col-6{
+    width: 50%;
+    padding: 0 15px;
+}
 .col-4{
     width: 33.3333%;
     padding: 0 15px;
@@ -136,7 +140,7 @@ ul{
                 padding: 18px 40px;
                 letter-spacing: 2px;
                 &:hover{
-                    background-color: #fff;
+                    background-color: $white;
                     border: 1px solid transparent;
                     box-shadow: 0px 18px 26.68px 2.32px rgba(0, 0, 0, 0.1);
                 }
@@ -159,7 +163,7 @@ ul{
         a{
             width: 40px;
             height: 40px;
-            background-color: #fff;
+            background-color: $white;
             box-shadow: 0px 18px 26.68px 2.32px rgba(0, 0, 0, 0.1);
             &:after{
                 content: "\f106";
@@ -266,7 +270,7 @@ ul{
             font-size: 16px;
             letter-spacing: .6;
             padding: 18px 42px;
-            background-color: #fff;
+            background-color: $white;
             color: $accent;
             text-transform: uppercase;
             box-shadow: 0px 18px 26.68px 2.32px rgba(0, 0, 0, 0.1);
@@ -367,8 +371,101 @@ ul{
         }
     }
 }
+/*---Testimonials end---*/
 
+/*---Hello start---*/
+.hello{
+    background-image: url(../img/footer_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    .hello__inner{
+        padding-bottom: 60px;
+        .title{
+            color: $white;
+            opacity: .9;
+            &:before{
+                background-color: #c1c1c1;
+            }
+        }
+        .hello_form{
+            max-width: 770px;
+            margin: 0 auto;
+            font-size: 16px;
+            letter-spacing: 0.6px;
+            padding-top: 65px;
+            text-align: center;
+            button{
+                position: relative;
+                font-weight: 500;
+                color: $accent;
+                padding: 13px 50px 13px 30px;
+                text-transform: uppercase;
+                background-color: $white;
+                border: none;
+                cursor: pointer;
+                &:before{
+                    content: url(../img/send-button.png);
+                    position: absolute;
+                    top: 14px;
+                    right: 30px;
+                    color: $accent
+                }
+            }
+            input[type="text"]{
+                height: 55px;
+                padding: 0px 10px;
+                width: 100%;
+                display: block;
+                color: $second;
+            }
+            textarea{
+                height: 205px;
+                resize: none;
+                display: block;
+                margin: 30px 0;
+                width: 100%;
+                padding: 25px 10px;
+                color: $second;
+            }
+        }
+    }
+    .footer{
+        border-top: 1px solid $white;
+        padding: 25px 0 30px;
+        text-align: center;
+        position: relative;
+        top: 0;
+        left: 0;
+        .footer__social{
+            position: absolute;
+            a{
+                position: relative;
+                height: 27px;
+                width: 27px;
+                color: $accent;
+                background-color: $white;
+                font-size: 16px;
+                &:hover{
+                    background-color: #0084b4;
+                }
+                &:hover span{
+                    color: $white;
+                }
+                span{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+        .footer__copy{
+           font-size: 16px;
+           color: $white;
+           letter-spacing: 0.6px;
+        }
+    }
+}
 
-
-
-/*---Testimonials start---*/
+/*---Hello end---*/
