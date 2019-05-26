@@ -25,7 +25,7 @@ section{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 .col-6{
     width: 50%;
@@ -83,6 +83,11 @@ ul{
     }
     .menu{
         float: right;
+        .menu__btn{
+            display: none;
+            font-size: 25px;
+            padding-top: 10px;
+        }
         ul{
             list-style: none;
             li{
@@ -94,7 +99,7 @@ ul{
                     padding-bottom: 5px;
                     &:hover{
                         border-bottom: 2px solid #878787;
-                        }
+                    }
                 }
             }
             li + li{
@@ -187,6 +192,7 @@ ul{
         min-height: 445px;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         .about__info{
             max-width: 480px;
             .title{
@@ -208,7 +214,7 @@ ul{
                 padding: 15px 45px;
                 color: $accent;
                 border: 1px solid $accent;
-                margin-top: 35px;
+                margin: 35px 0;
             }
         }
     }
@@ -225,6 +231,7 @@ ul{
     .services__item{
         text-align: center;
         padding-bottom: 60px;
+        min-width: 210px;
         .services__name{
             font-weight: 500;
             font-size: 24px;
@@ -238,11 +245,14 @@ ul{
 /*---Skills start---*/
 .skills{
     margin-bottom: 120px;
-    .skills__title{
+    .title{
         margin-bottom: 55px;
     }
     .skills__img{
         text-align: center;
+        img{
+            width: 100%;
+        }
     }
 }
 /*---Skills end---*/
@@ -256,10 +266,13 @@ ul{
     }
     .portfolio__item{
         width: 400px;
-        padding: 0px 15px;
+        padding: 15px 15px;
         &:hover{
         box-shadow: 0px 0px 36.75px 12.25px rgba(0, 0, 0, 0.15);
         transition: all .3s;
+        }
+        img{
+            width: 100%;
         }
     }
     .portfolio__btn{
@@ -281,7 +294,6 @@ ul{
 
 /*---Testimonials end---*/
 .testim{
-    padding-top: 50px;
     padding-bottom: 120px;
     .title{
         margin-bottom: 55px;

@@ -16,5 +16,9 @@ $(function(){
 		
 		//анимируем переход на расстояние - top за 1500 мс
 		$('body,html').animate({scrollTop: top}, 1500);
-	});
+    });
+    
+    $('.menu__btn').on('click', function(){
+        $('.menu ul').slideToggle();
+    })
 })
