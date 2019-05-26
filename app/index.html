@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Luis Oenrique</title>
+    <link href="https://fonts.googleapis.com/css?family=Asap:400,500,700|Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Asap:400,500,700|Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
@@ -22,20 +24,28 @@
                 </a>
             </div>
             <nav class="menu">
+                <div class="menu__btn">
+                    <i class="icon-bars"></i>
+                </div>
                 <ul>
                     <li>
                         <a href="#">home</a>
+                        <a href="#">home</a>
                     </li>
                     <li>
+                        <a href="#about">about</a>
                         <a href="#">about</a>
                     </li>
                     <li>
+                        <a href="#services">service</a>
                         <a href="#">service</a>
                     </li>
                     <li>
+                        <a href="#portfolio">portfolio</a>
                         <a href="#">portfolio</a>
                     </li>
                     <li>
+                        <a href="#contact">contact</a>
                         <a href="#">contact</a>
                     </li>
                 </ul>
@@ -45,10 +55,10 @@
     <!-- Header end -->
 
     <!-- Top start -->
-    <section class="top">
+    <section id="top" class="top">
         <div class="container">
             <div class="top__inner">
-                <div class="top__contant">
+                <div class="top__content">
                     <div class="top__title">
                         Luis Oenrique
                     </div>
@@ -63,18 +73,18 @@
                 <div class="top__img"></div>
             </div>
             <div class="top__togo">
-                <a href="#"></a>
+                <a href="#about"></a>
             </div>
         </div>
     </section>
     <!-- Top end -->
 
     <!-- About start -->
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="about__inner">
                 <div class="about__info">
-                    <div class="about__title title">
+                    <div class="title">
                         KNOW MORE ABOUT ME
                     </div>
                     <div class="about__text">
@@ -94,13 +104,13 @@
     <!-- About end -->
 
     <!-- Services start -->
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
-            <div class="title services__title">
+            <div class="title">
                 services
             </div>
             <div class="row">
-                <div class="col-4">
+                <div class="col-4 wow fadeInLeft">
                     <div class="services__item">
                         <div class="services__icon">
                             <img src="img/services_icon1.png" alt="">
@@ -110,53 +120,54 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4 wow fadeInDown">
                     <div class="services__item">
                         <div class="services__icon">
                             <img src="img/services_icon2.png" alt="">
                         </div>
                         <div class="services__name">
-                            user research
+                            IA And Wireframes
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4 wow fadeInRight">
                     <div class="services__item">
                         <div class="services__icon">
                             <img src="img/services_icon3.png" alt="">
                         </div>
                         <div class="services__name">
-                            user research
+                            User Testing
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4 wow fadeInLeft">
                     <div class="services__item">
                         <div class="services__icon">
                             <img src="img/services_icon4.png" alt="">
                         </div>
                         <div class="services__name">
-                            user research
+                            Looks and Feel
+                            Design (UI)
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4 wow fadeInUp">
                     <div class="services__item">
                         <div class="services__icon">
                             <img src="img/services_icon5.png" alt="">
                         </div>
                         <div class="services__name">
-                            user research
+                            Delivery
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-4 wow fadeInRight">
                     <div class="services__item">
                         <div class="services__icon">
                             <img src="img/services_icon6.png" alt="">
                         </div>
                         <div class="services__name">
-                            user research
+                            Integration Support
                         </div>
                     </div>
                 </div>
@@ -166,9 +177,9 @@
     <!-- Services end -->
 
     <!-- Skills start -->
-    <section class="skills">
+    <section class="skills" id="">
         <div class="container">
-            <div class="title skills__title">
+            <div class="title">
                 my skills
             </div>
             <div class="skills__img">
@@ -179,52 +190,228 @@
     <!-- Skills end -->
 
     <!-- Portfolio start -->
-    <section class="portfolio">
-            <div class="container">
-                <div class="title portfolio__title">
-                    portfolio
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="title">
+                portfolio
+            </div>
+            <div class="row portfolio__items">
+                <div class="portfolio__item">
+                    <img src="img/port_img1.jpg" alt="">
                 </div>
-                <div class="row">
-                    <div class="col-4">
-                        <div class="portfolio__item">
-                            <img src="img/port_img1.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="portfolio__item">
-                            <img src="img/port_img2.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="portfolio__item">
-                            <img src="img/port_img3.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="portfolio__item">
-                            <img src="img/port_img4.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="portfolio__item">
-                            <img src="img/port_img5.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="portfolio__item">
-                            <img src="img/port_img6.jpg" alt="">
-                        </div>
-                    </div>
+                <div class="portfolio__item">
+                    <img src="img/port_img2.jpg" alt="">
                 </div>
-                <div class="portfolio__btn">
-                    <a href="#">LOAD MORE</a>
+                <div class="portfolio__item">
+                    <img src="img/port_img3.jpg" alt="">
+                </div>
+                <div class="portfolio__item">
+                    <img src="img/port_img4.jpg" alt="">
+                </div>
+                <div class="portfolio__item">
+                    <img src="img/port_img5.jpg" alt="">
+                </div>
+                <div class="portfolio__item">
+                    <img src="img/port_img6.jpg" alt="">
                 </div>
             </div>
-        </section>
-        <!-- Portfolio end -->
+            <div class="portfolio__btn">
+                <a href="#">LOAD MORE</a>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio end -->
+
+    <!-- Testimonials start -->
+    <section class="testim">
+        <div class="container">
+            <div class="title">
+                testimonials
+            </div>
+            <div class="testim__slider">
+                <div class="testim__item">
+                    <div class="testim__content">
+                        <div class="testim__img">
+                            <img src="img/testim_img.jpg" alt="">
+                        </div>
+                        <div class="testim__info">
+                            <div class="testim__name">
+                                Limara tusi
+                            </div>
+                            <div class="testim__position">
+                                CEO, RanDOM COMPANY
+                            </div>
+                            <div class="testim__text">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                dolor.
+                                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                                ridiculus mus. Donec quam felis, ultricies nec,
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testim__item">
+                    <div class="testim__content">
+                        <div class="testim__img">
+                            <img src="img/testim_img.jpg" alt="">
+                        </div>
+                        <div class="testim__info">
+                            <div class="testim__name">
+                                Limara tusi
+                            </div>
+                            <div class="testim__position">
+                                CEO, RanDOM COMPANY
+                            </div>
+                            <div class="testim__text">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                dolor.
+                                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                                ridiculus mus. Donec quam felis, ultricies nec,
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testim__item">
+                    <div class="testim__content">
+                        <div class="testim__img">
+                            <img src="img/testim_img.jpg" alt="">
+                        </div>
+                        <div class="testim__info">
+                            <div class="testim__name">
+                                Limara tusi
+                            </div>
+                            <div class="testim__position">
+                                CEO, RanDOM COMPANY
+                            </div>
+                            <div class="testim__text">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                dolor.
+                                Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                                ridiculus mus. Donec quam felis, ultricies nec,
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="benefit__icons">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 wow zoomIn">
+                        <div class="benefit__item">
+                            <div class="benefit__img">
+                                <img src="img/benefit_img1.png" alt="">
+                            </div>
+                            <div class="benefit__count">
+                                120
+                            </div>
+                            <div class="benefit__title">
+                                hands to work
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 wow zoomIn">
+                        <div class="benefit__item">
+                            <div class="benefit__img">
+                                <img src="img/benefit_img2.png" alt="">
+                            </div>
+                            <div class="benefit__count">
+                                310
+                            </div>
+                            <div class="benefit__title">
+                                happy client
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 wow zoomIn">
+                        <div class="benefit__item">
+                            <div class="benefit__img">
+                                <img src="img/benefit_img3.png" alt="">
+                            </div>
+                            <div class="benefit__count">
+                                510
+                            </div>
+                            <div class="benefit__title">
+                                finished project
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 wow zoomIn">
+                        <div class="benefit__item">
+                            <div class="benefit__img">
+                                <img src="img/benefit_img4.png" alt="">
+                            </div>
+                            <div class="benefit__count">
+                                720
+                            </div>
+                            <div class="benefit__title">
+                                cups of coffe
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials end -->
+
+    <!-- Hello start -->
+    <section class="hello" id="contact">
+        <div class="container">
+            <div class="hello__inner">
+                <div class="title">
+                    say hello!
+                </div>
+                <div class="hello_form">
+                    <form>
+                        <div class="row">
+                            <div class="col-6">
+                                <input type="text" placeholder="Name">
+                            </div>
+                            <div class="col-6">
+                                <input type="text" placeholder="Email">
+                            </div>
+                        </div>
+                        <textarea placeholder="Message"></textarea>
+                        <button type="submit">send</button>
+                    </form>
+                </div>
+                <div class="top__togo footer__togo">
+                    <a href="#top"></a>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer__social">
+                    <a href="#">
+                        <span class="icon-facebook"></span>
+                    </a>
+                    <a href="#">
+                        <span class="icon-twitter"></span>
+                    </a>
+                    <a href="#">
+                        <span class="icon-linkedin"></span>
+                    </a>
+                    <a href="#">
+                        <span class="icon-google-plus"></span>
+                    </a>
+                    <a href="#">
+                        <span class="icon-behance"></span>
+                    </a>
+                    <a href="#">
+                        <span class="icon-dribbble"></span>
+                    </a>
+                </div>
+                <div class="footer__copy">
+                    2017. All Right Reserved
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hello end -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
