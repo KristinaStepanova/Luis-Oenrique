@@ -92,13 +92,25 @@ ul{
             list-style: none;
             li{
                 display: inline-block;
+                position: relative;
+                &:hover a:first-child{
+                    color: transparent;
+                    border-bottom: 2px solid transparent;
+                }
+                &:hover a:last-child{
+                    color: $accent;
+                    border-bottom: 2px solid #878787;
+                }
                 a{
                     font-size: 16px;
                     color: $accent;
                     text-transform: uppercase;
                     padding-bottom: 5px;
-                    &:hover{
-                        border-bottom: 2px solid #878787;
+                    &:last-child{
+                        text-transform: capitalize;
+                        position: absolute;
+                        top: 0;
+                        color: transparent;
                     }
                 }
             }
