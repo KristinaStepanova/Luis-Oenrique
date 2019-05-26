@@ -1,4 +1,7 @@
 $(function(){
+
+    new WOW().init();
+
     $('.testim__slider').slick({
         dots: true,
         arrows: false,
